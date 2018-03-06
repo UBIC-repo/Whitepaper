@@ -102,18 +102,18 @@ It consist in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
-Let's be ![equation](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the hash of the passport information, ![equation](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![equation](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+Let's be ![](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the hash of the passport information, ![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 We reveal:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bk%7D%20%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) where ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is a nonce you generated
+![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bk%7D%20%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is a nonce you generated
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation]([img]http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
+![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![]([img]http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
 
 #### verification
 
