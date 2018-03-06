@@ -1,15 +1,15 @@
 # Table of contents
 
-- Universal Basic Income Currency
-- Previous work and other projects
-- Economics
-- The E-Passport
-- Non-transferable proof of Signature Knowledge
-- Address structure
-- Transactions
-- Blocks
-- Possible issues
-- Other applications
+- [Universal Basic Income Currency](#universal-basic-income-currency)
+- [Previous work and other projects](#previous-work-and-other-projects)
+- [Economics](#economics)
+- [The E-Passport](#the-e-passport)
+- [Non-transferable proof of Signature Knowledge](#the-nfc-chip)
+- [Address structure](#address-structure)
+- [Transactions](#transactions)
+- [Blocks](#blocks)
+- [Possible issues](#possible-issues)
+- [Other applications](#other-applications)
 
 # Universal Basic Income Currency
 In current cryptocurrency schemes rewards are distributed to entities that secure the network through proof of work or proof of stake mechanisms, there are no rewards for being part of the network.
