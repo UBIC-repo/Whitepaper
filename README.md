@@ -102,24 +102,24 @@ It consist in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
-Let's be ![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png) the hash of the passport information, ![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+Let's be ![m](https://github.com/UBIC-repo/images/raw/master/formulas/m.png) the hash of the passport information, ![R](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/R.png) the elliptic curve point extracted from the signature ![(r,s)](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/rs.png)
 We reveal:
 
-![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png)
+ - ![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png)
 
-![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/R.png)
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/R.png)
 
-![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Qpa.png) such that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bk%7D%20%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is a nonce you generated
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Rp.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/rpkpr.png) where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/kp.png) is a nonce you generated
 
-![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/sp.png) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/mp.png) is the hash of a message you want to sign with your derived private key.
 
 #### verification
 
-step 1. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif1.png)
+ - step 1. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif1.png)
 
-step 2. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif2.png)
+ - step 2. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif2.png)
 
 Source: https://crypto.stackexchange.com/questions/15274/ecdsa-signature-verifiable-1-way-transformations/32608#32608
 
