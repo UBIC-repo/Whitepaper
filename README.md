@@ -102,21 +102,22 @@ The Non-transferable proof of Signature Knowledge is the key element that will U
 
 # Address structure
 An address is a base58 binary and is structured as follows:
-<program identifier> <payload length> <payload> <checksum>
+```
+<program identifier>> <payload length> <payload> <checksum>
       1 byte             1-4 bytes     x bytes   3 bytes
-
+```
 
 The program identifier allows UBIC to easily evolve and add new functionalities such as a new Script language for smart contracts.
 
 In the case of this base58 public key hash address once decoded the structure would be:
-
+```
 <program identifier> <payload length>                   <payload>                      <checksum>
        0x02                0x14         0x23be5a8564ebc151004d798ef812aa25ee7ff79        0x23f234
-
-0x02 is the program identifier for pay to hash using ripemd160((sha256(public key)) as hashing.
-0x14 is the the hexadecimal representation of 20 which is the length of the ripemd160 hash.
-0x23be5a8564ebc151004d798ef812aa25ee7ff79 is the payload. In this case the hash of the public key.
-0x23f234 is the checksum that is obtained by taking the leading 3 bytes from the result of sha256(<program identifier> <payload length> <payload>)
+```
+```0x02``` is the program identifier for pay to hash using ```ripemd160((sha256(public key))``` as hashing.
+```0x14``` is the the hexadecimal representation of 20 which is the length of the ripemd160 hash.
+```0x23be5a8564ebc151004d798ef812aa25ee7ff79``` is the payload. In this case the hash of the public key.
+```0x23f234``` is the checksum that is obtained by taking the leading 3 bytes from the result of ```sha256(<program identifier> <payload length> <payload>)```
 
 There is no need to have one address for every currency, one single address can receive, hold and send all UBIC currencies.
 
