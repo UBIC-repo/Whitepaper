@@ -102,12 +102,12 @@ It consist in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
-Let's be ![](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the hash of the passport information, ![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+Let's be ![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png) the hash of the passport information, ![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 We reveal:
 
-![](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png)
 
-![](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/R.png)
 
 ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
@@ -117,9 +117,9 @@ We reveal:
 
 #### verification
 
-step 1. verify that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Dm%20%5Cast%20G%2Br%20%5Cast%20Qa&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+step 1. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif1.png)
 
-step 2. verify that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%20%5Cast%20%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bm%7D%20%20%5Cast%20R%2B%20%5Cacute%7Br%7D%20%20%5Cast%20Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+step 2. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif2.png)
 
 Source: https://crypto.stackexchange.com/questions/15274/ecdsa-signature-verifiable-1-way-transformations/32608#32608
 
