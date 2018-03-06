@@ -101,7 +101,27 @@ The Non-transferable proof of Signature Knowledge is the key element that allows
 It consist in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
-@TODO
+- generating the proof
+Let's be ![equation](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the hash of the passport information, ![equation](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) the elliptic curve point extracted from the signature ![equation](http://www.sciweavers.org/tex2img.php?eq=%28r%2Cs%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+We reveal:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=m&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Ds%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bk%7D%20%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) where ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is a nonce you generated
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![equation]([img]http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
+
+- verification
+
+step 1. verify that ![equation](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Dm%20%5Cast%20G%2Br%20%5Cast%20Qa&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+step 2. verify that ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%20%5Cast%20%20%5Cacute%7BR%7D%20%3D%5Cacute%7Bm%7D%20%20%5Cast%20%20R%2B%5Cacute%7Br%7D%20%20%5Cast%20%0A%20Q%5Cacute%7Ba%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+Source: https://crypto.stackexchange.com/questions/15274/ecdsa-signature-verifiable-1-way-transformations/32608#32608
 
 ### Algorithm for RSA
 @TODO
