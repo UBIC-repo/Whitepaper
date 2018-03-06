@@ -4,7 +4,7 @@
 - [Previous work and other projects](#previous-work-and-other-projects)
 - [Economics](#economics)
 - [The E-Passport](#the-e-passport)
-- [Non-transferable proof of Signature Knowledge](#the-nfc-chip)
+- [Non-transferable proof of Signature Knowledge](#non-transferable-proof-of-signature-knowledge)
 - [Address structure](#address-structure)
 - [Transactions](#transactions)
 - [Blocks](#blocks)
@@ -62,26 +62,25 @@ The table bellow shows the distribution rates for each UBIC currency.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
-Those passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
-The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features and could implement a set of optional features.
-There is a little bit of freedom regarding the cryptographic algorithms used, this is why currently Swiss, German, Austrian and British passports are the best suited for building UBIC.
+These passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
+The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features.
+There is a little bit of freedom regarding the cryptographic algorithms used, this is why not all passports can be used with UBIC.
 
 ### The NFC chip
 The key part of the E-Passport is a NFC chip that is embed in it. This chip contains usually 32kb to 64kb of information distributed in several Data Groups.
- - Data Group 1 contains the Machine Readable Zone also known as MRZ, it includes information such as the first name, last name, date of birth, date of expiration.
+ - Data Group 1 contains the Machine Readable Zone also known as MRZ, it includes information such as the first name, last name, date of birth and the date of expiration.
  - Data Group 2 contains the facial image
- - Data Group 3 contains contains the fingerprints but note that this part can only be accessed using something called the Extended Access Control aka. EAC which is only available to governments.
+ - Data Group 3 contains the fingerprints, it can only be accessed using something called the Extended Access Control which is only available to governments.
 Finally the Document Security Object is a PKCS7 file that contains the hash of all the different Data Groups signed using a Document Signing Certificate issued by a government.
 In the case of UBIC only the Document Security Objects will be read out to generate a non-transferable proof of signature knowledge.
 
 ### Basic Access Control
 Using NFC technology it is possible to read out passive tags that are up to 10cm away. Theoretically it would be possible to read out a passport through the pocket of someone.
-However this isn't that easy thanks to Basic Access Control. To read out any data from the E-Passport it is required to provide the passport number, date of birth and date of expiry.
-Those information act like a password that can either be typed in manually or read out automatically using an Optical Character Recognition system.
- 
+However this isn't that easy because of a security feature called Basic Access Control. If it is enabled the passport number, date of birth and date of expiry act like a password and have to be provided to NFC chip to read out the content.
+
 ### Document Signing Certificates
 As described by DOC9303, Document Signing Certificate are issued at least once every three months and have a limited signing period after which the private key should be destroyed.
-This ensures that if one DSC is misused only a limited set of passports needs to be reissued. All DSC have to be signed by a Country Signing Certificate Authority also known as CSCA.
+This ensures that if one DSC is misused only a limited set of passports needs to be reissued. All DSCs have to be signed by a Country Signing Certificate Authority also known as CSCA.
  
 ### Country Signing Certificates
 The Country Signing Certificates are issued by the CSCA, this entity has the highest level of privilege within the governmental Public Key Infrastructure. 
@@ -91,8 +90,9 @@ The Public Key Directory is a service that provides the Country Signing and Docu
 The link to download them is: https://pkddownloadsg.icao.int/
 The PKD is not the only source where it is possible to to get those certificates, some governments publish their Country Signing Certificate and the ones of other countries they trust online, DSCs can also be found on passports themselves.
  
-#Non-transferable proof of Signature Knowledge
-The Non-transferable proof of Signature Knowledge is the key element that will UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
+# Non-transferable proof of Signature Knowledge
+The Non-transferable proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
+It consist in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 @TODO
@@ -190,6 +190,9 @@ This however appears to be unlikely as it will certainly lower their credibility
 While it is difficult for a non-instutional participant to link an address to an identity governments that 
  
 # Other applications
-@TODO voting
+### KYC
+Although there are no personal information stored on the blockchain itself, a user could decide to reveal the information contained in the Date Group 1 and/or Data Group 2 to another identity.
 
-
+### Voting
+Two voting schemes are possible with UBIC, in the first voting is weighted by the currency holdings of the voters like it is already done with many cryptocurrencies.
+In the second scheme only UBI receiver can vote with each a voting weight of 1, because the country of origin from the voter is known votes can also be country specific.
