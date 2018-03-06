@@ -3,6 +3,7 @@
 - [Universal Basic Income Currency](#universal-basic-income-currency)
 - [Previous work and other projects](#previous-work-and-other-projects)
 - [Economics](#economics)
+- [Consensus](#consensus)
 - [The E-Passport](#the-e-passport)
 - [Non-transferable proof of Signature Knowledge](#non-transferable-proof-of-signature-knowledge)
 - [Address structure](#address-structure)
@@ -59,6 +60,11 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
 | ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
 
+# Consensus
+With UBIC there are no miners, instead blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in it's early stage. As time goes by new delegates will be added and the genesis delegates will be removed making UBIC truely decentralized.
+The addition and removal of delegate is regulated through a voting mechanism in which only delegates are allowed to vote.
+Delegates will be people, companies, nonprofit organizations or any entity capable of running a node and willing to support this project. They will be designated by the community and later be voted by the other delegates.
+Should a delegate misbehave other delegates are encourage to revoke it's priviledge by doing an unvote.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
