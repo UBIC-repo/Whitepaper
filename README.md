@@ -113,7 +113,7 @@ We reveal:
 
 ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bk%7D%20%20%5Cast%20R&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is a nonce you generated
 
-![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![]([img]http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
+![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) such that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%3D%20%5Cacute%7Bk%7D%20%5E%7B-1%7D%20%28%20%5Cacute%7Bm%7D%20%2B%20%5Cacute%7Br%7D%20%20%5Cast%20s%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) and where ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bm%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) is the hash of a message you want to sign with your derived private key.
 
 #### verification
 
