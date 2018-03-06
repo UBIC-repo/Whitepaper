@@ -119,7 +119,7 @@ We reveal:
 
 step 1. verify that ![](http://www.sciweavers.org/tex2img.php?eq=Q%20%5Cacute%7Ba%7D%20%3Dm%20%5Cast%20G%2Br%20%5Cast%20Qa&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-step 2. verify that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%20%5Cast%20%20%5Cacute%7BR%7D%20%3D%5Cacute%7Bm%7D%20%20%5Cast%20%20R%2B%5Cacute%7Br%7D%20%20%5Cast%20%0A%20Q%5Cacute%7Ba%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+step 2. verify that ![](http://www.sciweavers.org/tex2img.php?eq=%20%5Cacute%7Bs%7D%20%20%5Cast%20%20%5Cacute%7BR%7D%20%3D%20%5Cacute%7Bm%7D%20%20%5Cast%20R%2B%20%5Cacute%7Br%7D%20%20%5Cast%20Q%20%5Cacute%7Ba%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 Source: https://crypto.stackexchange.com/questions/15274/ecdsa-signature-verifiable-1-way-transformations/32608#32608
 
