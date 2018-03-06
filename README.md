@@ -103,13 +103,13 @@ It consist in proving the knowledge of a digital signature without revealing it.
 # Address structure
 An address is a base58 binary and is structured as follows:
 ```
-<program identifier>> <payload length> <payload> <checksum>
+<program identifier> <payload length> <payload> <checksum>
       1 byte             1-4 bytes     x bytes   3 bytes
 ```
 
 The program identifier allows UBIC to easily evolve and add new functionalities such as a new Script language for smart contracts.
 
-In the case of this base58 public key hash address once decoded the structure would be:
+Example:
 ```
 <program identifier> <payload length>                   <payload>                      <checksum>
        0x02                0x14         0x23be5a8564ebc151004d798ef812aa25ee7ff79        0x23f234
@@ -127,8 +127,8 @@ There is no need to have one address for every currency, one single address can 
 # Transactions
 
 ### Structure
-Transactions can have 1 or more inputs and zero, one or more outputs. The input values have always to be greater or equal to the output values.
-The difference between sum(inputs) - sum(outputs) are the transactions fees that are redistributed to validators also known as delegates.
+Transactions can have one or more inputs and zero, one or more outputs. The input values have always to be greater or equal to the output values.
+The difference between sum(inputs) - sum(outputs) are the transactions fees that are burned which is meant to reduce inflation.
 A transaction can transfer several currencies at the time. However it is not possible to transform one currency in another.
 
 ### Standard transaction
@@ -143,19 +143,19 @@ The standard transaction's structure is as follows:
 	- amount
 	- script
 
-The network is an uint8_t field that ensures a transaction from the test network cannot be broadcasted on the main one.
-The nonce is an uint32_t field that ensures a transaction cannot be replayed multiple times.
-The amount fields are a map that maps a currency id (uint8_t) to an currency amount (uint64_t).
-The script fields are an std::vector<unsigned char> field that is intended to contain a serialized object.
+The network is an ```uint8_t``` field it ensures that a transaction from the test network cannot be broadcasted on the main one.
+The nonce is an ```uint32_t``` field it ensures that a transaction cannot be replayed multiple times.
+The amount field is a map that maps a currency id (```uint8_t```) to a currency amount (```uint64_t```).
+The script field is a ```std::vector<unsigned char>``` field that is intended to contain a serialized object.
 
 ### Onchain currency exchange
 In a scenario where Alice holds 10 UCH and wants to exchange them for 10 UDE from Bob they could build a transaction together for this purpose.
-Lets 0x17a6 be Alice's address and 0x98b1 Bob's address. Then the transaction having as inputs 0x17a6(10 UCH), 0x98b1(10 UDE) and as outputs 0x17a6(10 UDE), 0x98b1(10 UCH) would serve this purpose..
+Lets 0x17a6 be Alice's address and 0x98b1 Bob's address. Then the transaction having as inputs 0x17a6(10 UCH), 0x98b1(10 UDE) and as outputs 0x17a6(10 UDE), 0x98b1(10 UCH) would serve this purpose.
  
 # Blocks
 Blocks are structured the as follows:
 - BlockHeader
-	- version
+  - version
   - headerHash
   - previousHeaderHash
   - merkleRootHash
@@ -171,23 +171,21 @@ Blocks are structured the as follows:
 
 
 # Possible issues
- - Individuals with multiple passports
+### Individuals with multiple passports
 For privacy reasons no personal information are transmitted to the blockchain. UBIC assumes that every individual has only one valid passport but this might not be true.
 Peoples can get a new passport before the old one is expired or claim that it has been stollen.
 Because Passport revocation lists are not public UBIC assumes that every passport that hasn't reached it's date of expiry is valid.
 It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more.
 There are some factors that mitigate this risk:
- - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often won't get a new one and will draw attention from law enforcement.
- - The fees and the time that is required to get a new passport.
+ - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often he or her won't get a new one and will draw attention from law enforcement.
+ - The fees and the time that is required to get a new passport might outwight the benefit of receiving additional UBI.
  - Governments could issue passport revocation lists. A stollen or lost passport will then immediately stop to receive any additional coins.
  
- - Hostile governments
-Governments might be hostile to the idea of this kind of cryptocurrencies. They could then try to harm it through legislation or hacking.
-Because they are they are emitting the Document Signing Certificates they could spam the network with passport registration transaction.
-This however appears to be unlikely as it will certainly lower their credibility and damage them.
+### Hostile governments
+Governments might be hostile to the idea of this kind of cryptocurrencies. They could then try to harm it through legislation or hacking. Because they are emitting the Document Signing Certificates they could spam the network with passport registration transaction, this however appears to be unlikely as it will certainly lower their credibility and damage them.
  
- - Privacy concerns
-While it is difficult for a non-instutional participant to link an address to an identity governments that 
+### Privacy concerns
+While it is difficult for a non-instutional participant to link an address to an identity, governments that emitted the passport certainly will be able to do so.
  
 # Other applications
 ### KYC
