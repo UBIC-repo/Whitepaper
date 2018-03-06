@@ -29,6 +29,37 @@ A large share of this supply will be equally distributed among addresses that we
 This means that if the block supply for UCH the Swiss UBIC currency is 100 units per block and there are 50 registered passports each will get 2 units per block.
 Some weeks later there are 500 registered passports, the reward will still be 100 units per block or a tiny bit more, now every passport holder will get 0.2 units per block.
 
+The table bellow shows the distribution rates for each UBIC currency.
+
+| Currency code | Country  | UBI yearly emission rate | additional information
+| :---- | :--------- | :---------------- | :------------- |
+| UCH	 | Switzerland	             | 10,196,640	 |  | 
+| UDE	 | Germany	                 | 100,599,840	 |  | 
+| UAT	 | Austria	                 | 10,617,120	 | passports after October 2014 | 
+| UUK	 | United Kingdom	         | 79,838,640	 |  | 
+| UIE	 | Ireland	                 | 5,781,600 | 	passports after May 2016 | 
+| UUS	 | USA	                     | 393,096,240	 |  | 
+| UAU	 | Australia	             | 29,223,360	 |  | 
+| UCN	 | China	                 | 1,677,767,760	 | 
+| USE	 | Sweden	                 | 12,036,240	 |  | 
+| UFR	 | France	                 | 81,730,800	 |  | 
+| UCA	 | Canada	                 | 44,150,400	 |  | 
+| UJP	 | Japan	                 | 154,526,400	 | passports after May 2016 | 
+| UTH	 | Thailand	                 | 81,520,560 |  | 
+| UNZ	 | New Zealand               | 	5,571,360 |  | 
+| UAE	 | United Arab Emirates 	 | 11,300,400 |  | 
+| UFI	 | Finland	                 | 6,675,120 |  | 
+| ULU	 | Luxemburg	             | 525,600	     | | 
+| USG	 | Singapore	             | 6,832,800	 | | 
+| UHU	 | Hungary	                 | 11,931,120	 | | 
+| UCZ	 | Czech Republic	         | 12,877,200	 |  | 
+| UMY	 | Malaysia	                 | 38,684,160	 |  | 
+| UUA	 | Ukraine	                 | 54,767,520	 |  | 
+| UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
+| UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
+| ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
+
+
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
 Those passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
