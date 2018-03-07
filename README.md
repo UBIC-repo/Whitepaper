@@ -103,7 +103,7 @@ It consist in proving the knowledge of a digital signature without revealing it.
 ### Algorithm for ECDSA
 #### generating the proof
 Let's be ![m](https://github.com/UBIC-repo/images/raw/master/formulas/m.png) the hash of the passport information, ![R](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/R.png) the elliptic curve point extracted from the signature ![(r,s)](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/rs.png)
-We reveal:
+On the blockchain will be revealed:
 
  - ![](https://github.com/UBIC-repo/images/raw/master/formulas/m.png)
 
@@ -111,9 +111,9 @@ We reveal:
 
  - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Qpa.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/QapsR.png)
 
- - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Rp.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/rpkpr.png) where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/kp.png) is a nonce you generated
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Rp.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/rpkpr.png) where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/kp.png) is a nonce.
 
- - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/sp.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/spk1mprps.png) and where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/mp.png) is the hash of a message you want to sign with your derived private key.
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/sp.png) such that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/spk1mprps.png) and where ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/mp.png) is the UBIC address that will receive the UBI reward.
 
 #### verification
 
