@@ -121,8 +121,6 @@ On the blockchain will be revealed:
 
  - step 2. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif2.png)
 
-Source: https://crypto.stackexchange.com/questions/15274/ecdsa-signature-verifiable-1-way-transformations/32608#32608
-
 ### Algorithm for RSA
 @TODO
 
