@@ -122,7 +122,21 @@ On the blockchain will be revealed:
  - step 2. verify that ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/verif2.png)
 
 ### Algorithm for RSA
-@TODO
+#### generating the proof
+Let's be X the hash of the passport information, e the RSA exponent typically 2^16 + 1 and A the signature then the solution to prove knowledge of A according to the Guillou-Quisquater protocol is to reveal:
+
+ - e the RSA exponent typically 2^16 + 1 
+ - X the hash of the passport information
+ - t{1..5} such that t = (A^d{1..5} *r) mod n where d is a 16 bit salted hash derivated from the UBIC public key and r is a cryptographicaly secure random number
+ - T such than T = (r^e) mod n
+
+Because 1 < d < e and e usually equals to 2^16+1 the operation above has to be done several times with different values of d, in fact at least 5 times in the current UBIC implementation.
+
+#### Verification
+
+ - t{1..5}^v = X^d{1..5} * T mod n
+
+The operation above has to be repeated for each value of d generated during the proof generation.
 
 # Address structure
 An address is a base58 binary and is structured as follows:
