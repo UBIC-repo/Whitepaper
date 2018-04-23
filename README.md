@@ -123,18 +123,18 @@ On the blockchain will be revealed:
 
 ### Algorithm for RSA
 #### generating the proof
-Let's be X the hash of the passport information, e the RSA exponent typically 2^16 + 1 and A the signature then the solution to prove knowledge of A according to the Guillou-Quisquater protocol is to reveal:
+Let's be ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/X.png) the hash of the passport information, ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/e.png) the RSA exponent typically ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/2161.png) and ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/A.png) the signature then the solution to prove knowledge of A according to the Guillou-Quisquater protocol is to reveal:
 
- - e the RSA exponent typically 2^16 + 1 
- - X the hash of the passport information
- - t{1..5} such that t = (A^d{1..5} *r) mod n where d is a 16 bit salted hash derivated from the UBIC public key and r is a cryptographicaly secure random number
- - T such than T = (r^e) mod n
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/e.png) the RSA exponent typically ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/2161.png) 
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/X.png) the hash of the passport information
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/t1..5eAd1..5r.png) where d is a 16 bit salted hash derivated from the UBIC public key and r is a cryptographicaly secure random number
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/T.png) such than ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/Tre.png)
 
-Because 1 < d < e and e usually equals to 2^16+1 the operation above has to be done several times with different values of d, in fact at least 5 times in the current UBIC implementation.
+Because 1 < d < e and e usually equals to ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/2161.png) the operation above has to be done several times with different values of d, in fact at least 5 times in the current UBIC implementation.
 
 #### Verification
 
- - t{1..5}^v = X^d{1..5} * T mod n
+ - ![](https://raw.githubusercontent.com/UBIC-repo/images/master/formulas/t1..5vXd1..5T.png)
 
 The operation above has to be repeated for each value of d generated during the proof generation.
 
