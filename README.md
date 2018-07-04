@@ -98,7 +98,7 @@ The PKD is not the only source where it is possible to to get those certificates
  
 # Non-transferable proof of Signature Knowledge
 The Non-transferable proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
-It consist in proving the knowledge of a digital signature without revealing it.
+It consists in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
