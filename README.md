@@ -216,7 +216,7 @@ Because Passport revocation lists are not public UBIC assumes that every passpor
 It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more.
 There are some factors that mitigate this risk:
  - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often he or her won't get a new one and will draw attention from law enforcement.
- - The fees and the time that is required to get a new passport might outwight the benefit of receiving additional UBI.
+ - The fees and the time that is required to get a new passport might outweigh the benefit of receiving additional UBI.
  - Governments could issue passport revocation lists. A stollen or lost passport will then immediately stop to receive any additional coins.
  
 ### Hostile governments
