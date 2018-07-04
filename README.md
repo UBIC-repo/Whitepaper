@@ -14,7 +14,7 @@
 
 # Universal Basic Income Currency
 In current cryptocurrency schemes rewards are distributed to entities that secure the network through proof of work or proof of stake mechanisms, there are no rewards for being part of the network.
-Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through an universal basic income.
+Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
 
 # Previous work and other projects
 As of 2018 thousand of cryptocurrencies exist and UBIC is not the first project aiming to implement an UBI distribution.
