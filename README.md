@@ -14,10 +14,10 @@
 
 # Universal Basic Income Currency
 In current cryptocurrency schemes rewards are distributed to entities that secure the network through proof of work or proof of stake mechanisms, there are no rewards for being part of the network.
-Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through an universal basic income.
+Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
 
 # Previous work and other projects
-As of 2018 thousand of cryptocurrencies exist and UBIC is not the first project aiming to implement an UBI distribution.
+As of 2018 thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution.
 The main difference between non-UBI and UBI cryptocurrencies is for the need to solve the sybil attack. 
 To solve this problem all other projects including Circle and Duniter are using a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algroithms and manual verification.
 UBIC attempts to solve this issue through another approach where the innovation gap is much lower by using the already existent digital features offered by modern Passports.
@@ -98,7 +98,7 @@ The PKD is not the only source where it is possible to to get those certificates
  
 # Non-transferable proof of Signature Knowledge
 The Non-transferable proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
-It consist in proving the knowledge of a digital signature without revealing it.
+It consists in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
@@ -216,7 +216,7 @@ Because Passport revocation lists are not public UBIC assumes that every passpor
 It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more.
 There are some factors that mitigate this risk:
  - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often he or her won't get a new one and will draw attention from law enforcement.
- - The fees and the time that is required to get a new passport might outwight the benefit of receiving additional UBI.
+ - The fees and the time that is required to get a new passport might outweigh the benefit of receiving additional UBI.
  - Governments could issue passport revocation lists. A stollen or lost passport will then immediately stop to receive any additional coins.
  
 ### Hostile governments
