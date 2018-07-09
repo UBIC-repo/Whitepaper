@@ -19,7 +19,7 @@ Current reward mechanisms always result in a very asymmetric value distribution 
 # Previous work and other projects
 As of 2018 thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution.
 The main difference between non-UBI and UBI cryptocurrencies is for the need to solve the sybil attack. 
-To solve this problem all other projects including Circle and Duniter are using a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algroithms and manual verification.
+To solve this problem all other projects including Circles and Duniter are using a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algroithms and manual verification.
 UBIC attempts to solve this issue through another approach where the innovation gap is much lower by using the already existent digital features offered by modern Passports.
 
 # Economics
