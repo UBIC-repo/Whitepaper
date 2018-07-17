@@ -64,7 +64,7 @@ The table bellow shows the distribution rates for each UBIC currency.
 With UBIC there are no miners, instead blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in it's early stage. As time goes by new delegates will be added and the genesis delegates will be removed making UBIC truely decentralized.
 The addition and removal of delegate is regulated through a voting mechanism in which only delegates are allowed to vote.
 Delegates will be people, companies, nonprofit organizations or any entity capable of running a node and willing to support this project. They will be designated by the community and later be voted by the other delegates.
-Should a delegate misbehave other delegates are encourage to revoke it's priviledge by doing an unvote.
+Should a delegate misbehave other delegates are encouraged to revoke it's priviledge by doing an unvote.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
@@ -217,7 +217,7 @@ It could be that some individuals end up with 2 or 3 verified addresses but it i
 There are some factors that mitigate this risk:
  - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often he or her won't get a new one and will draw attention from law enforcement.
  - The fees and the time that is required to get a new passport might outweigh the benefit of receiving additional UBI.
- - Governments could issue passport revocation lists. A stollen or lost passport will then immediately stop to receive any additional coins.
+ - Governments could issue passport revocation lists. A stolen or lost passport will then immediately stop to receive any additional coins.
  
 ### Hostile governments
 Governments might be hostile to the idea of this kind of cryptocurrencies. They could then try to harm it through legislation or hacking. Because they are emitting the Document Signing Certificates they could spam the network with passport registration transaction, this however appears to be unlikely as it will certainly lower their credibility and damage them.
