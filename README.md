@@ -181,8 +181,8 @@ The standard transaction's structure is as follows:
 	- amount
 	- script
 
-The network is an ```uint8_t``` field it ensures that a transaction from the test network cannot be broadcasted on the main one.
-The nonce is an ```uint32_t``` field it ensures that a transaction cannot be replayed multiple times.
+The network is an ```uint8_t``` field, it ensures that a transaction from the test network cannot be broadcasted on the main one.
+The nonce is an ```uint32_t``` field, it ensures that a transaction cannot be replayed multiple times.
 The amount field is a map that maps a currency id (```uint8_t```) to a currency amount (```uint64_t```).
 The script field is a ```std::vector<unsigned char>``` field that is intended to contain a serialized object.
 
