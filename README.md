@@ -60,17 +60,16 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
 | ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
 
-# Consensus
-With UBIC there are no miners, instead blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in it's early stage. As time goes by new delegates will be added and the genesis delegates will be removed making UBIC truely decentralized.
-The addition and removal of delegate is regulated through a voting mechanism in which only delegates are allowed to vote.
-Delegates will be people, companies, nonprofit organizations or any entity capable of running a node and willing to support this project. They will be designated by the community and later be voted by the other delegates.
-Should a delegate misbehave other delegates are encouraged to revoke it's priviledge by doing an unvote.
+# Sybil Resistance
+UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
+
+UBIC is currently restricted to be used in 25 countrys that fullfill all securtiy requirements for UBIC to wotk sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
 These passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
 The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features.
-There is a little bit of freedom regarding the cryptographic algorithms used, this is why not all passports can be used with UBIC.
+There is a little bit of freedom regarding the cryptographic algorithms used, some are not save enough for UBIC yet (for example Hong Kong uses 3 as RSA exponent while UBIC requires a big enough RSA exponent, 65537 or more), this is why not all passports can be used with UBIC.
 
 ### The NFC chip
 The key part of the E-Passport is a NFC chip that is embed in it. This chip contains usually 32kb to 64kb of information distributed in several Data Groups.
@@ -206,6 +205,13 @@ Blocks are structured the as follows:
   - issuerPubKey
   - issuerSignature
 - Transactions
+
+
+# Consensus
+With UBIC there are no miners, instead blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in it's early stage. As time goes by new delegates will be added and the genesis delegates will be removed making UBIC truely decentralized.
+The addition and removal of delegate is regulated through a voting mechanism in which only delegates are allowed to vote.
+Delegates will be people, companies, nonprofit organizations or any entity capable of running a node and willing to support this project. They will be designated by the community and later be voted by the other delegates.
+Should a delegate misbehave other delegates are encouraged to revoke it's priviledge by doing an unvote.
 
 
 # Possible issues
