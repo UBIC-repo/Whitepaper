@@ -30,7 +30,7 @@ A large share of this supply will be equally distributed among addresses that we
 This means that if the block supply for UCH the Swiss UBIC currency is 100 units per block and there are 50 registered passports each will get 2 units per block.
 Some weeks later there are 500 registered passports, the reward will still be 100 units per block or a tiny bit more, now every passport holder will get 0.2 units per block.
 
-The table bellow shows the distribution rates for each UBIC currency.
+The table bellow shows the distribution rates for each UBIC currency. The rates of each county are designed proportional to the population count: if the whole population of a country would join UBIC, each one would receive 0,1 units a month.
 
 | Currency code | Country  | UBI yearly emission rate | additional information
 | :---- | :--------- | :---------------- | :------------- |
