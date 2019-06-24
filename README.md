@@ -3,8 +3,9 @@
 - [Universal Basic Income Currency](#universal-basic-income-currency)
 - [Previous work and other projects](#previous-work-and-other-projects)
 - [Economics](#economics)
+- [Sybil Resistance](#sybil resistance)
 - [Consensus](#consensus)
-- [The E-Passport](#the-e-passport)
+- [The E-Passport](#the e-passport)
 - [Non-transferable proof of Signature Knowledge](#non-transferable-proof-of-signature-knowledge)
 - [Address structure](#address-structure)
 - [Transactions](#transactions)
@@ -59,11 +60,12 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
 | ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
+| UIS	 | Iceland 	                 | 420,480	 | passports after February 2013 |
 
 # Sybil Resistance
 UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
 
-UBIC is currently restricted to be used in 25 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
+UBIC is currently restricted to be used in 26 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
@@ -217,7 +219,7 @@ Should a delegate misbehave other delegates are encouraged to revoke it's privil
 # Possible issues
 ### Individuals with multiple passports
 For privacy reasons no personal information are transmitted to the blockchain. UBIC assumes that every individual has only one valid passport but this might not be true.
-Peoples can get a new passport before the old one is expired or claim that it has been stollen.
+Peoples can get a new passport before the old one is expired or claim that it has been stolen.
 Because Passport revocation lists are not public UBIC assumes that every passport that hasn't reached it's date of expiry is valid.
 It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more.
 There are some factors that mitigate this risk:
