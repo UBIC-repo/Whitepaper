@@ -59,6 +59,7 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
 | ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
+| UIS	 | Iceland      	         | 420,480	 | passports after february 2013 | 
 
 # Sybil Resistance
 UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
