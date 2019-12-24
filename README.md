@@ -57,6 +57,8 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UCZ	 | Czech Republic	         | 12,877,200	 |  | 
 | UMY	 | Malaysia	                 | 38,684,160	 |  | 
 | UUA	 | Ukraine	                 | 54,767,520	 |  | 
+| USP	 | Spain 	                 | 108,000,000	 | passports after July 2016 |
+| UHK	 | Hongkong	                 | 17,100,000	 | passports after July 2019 | 
 | UIS	 | Iceland 	                 | 420,480	 | passports after February 2013 |
 | UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
@@ -65,7 +67,7 @@ The table bellow shows the distribution rates for each UBIC currency.
 # Sybil Resistance
 UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
 
-UBIC is currently restricted to be used in 26 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
+UBIC is currently restricted to be used in 28 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
 
 # The E-Passport
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
