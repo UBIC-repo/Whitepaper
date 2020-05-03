@@ -18,9 +18,11 @@ In current cryptocurrency schemes rewards are distributed to entities that secur
 Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
 
 # Previous work and other projects
-As of 2018 thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution.
+As of 2020 thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution.
 The main difference between non-UBI and UBI cryptocurrencies is for the need to solve the sybil attack. 
-To solve this problem all other projects including Circles and Duniter are using a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algorithms and manual verification.
+
+Some projects like "Duniter" for example have started to create a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algorithms and manual verification. Another approach is a Turing-Test for participants - for example simultanous puzzle-solving with "Idena" -, which consumes a lot of lifetime for willing participants while resistance against artificial intelligence is a continous challenge.
+
 UBIC attempts to solve this issue through another approach where the innovation gap is much lower by using the already existent digital features offered by modern Passports.
 
 # Economics
@@ -73,7 +75,7 @@ UBIC is currently restricted to be used in 28 countrys that fullfill all securit
 Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
 These passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
 The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features.
-There is a little bit of freedom regarding the cryptographic algorithms used, some are not save enough for UBIC yet (for example Hong Kong uses 3 as RSA exponent while UBIC requires a big enough RSA exponent, 65537 or more), this is why not all passports can be used with UBIC.
+There is a little bit of freedom regarding the cryptographic algorithms used, some are not save enough for UBIC yet (for example Hong Kong used 3 as RSA exponent for until June 2019, while UBIC requires a big enough RSA exponent, 65537 or more), this is why not all passports can be used with UBIC.
 
 ### The NFC chip
 The key part of the E-Passport is a NFC chip that is embed in it. This chip contains usually 32kb to 64kb of information distributed in several Data Groups.
