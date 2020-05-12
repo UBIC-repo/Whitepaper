@@ -44,7 +44,7 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UIE	 | Ireland	                 | 5,781,600 | 	passports after May 2016 | 
 | UUS	 | USA	                     | 393,096,240	 |  | 
 | UAU	 | Australia	             | 29,223,360	 |  | 
-| UCN	 | China	                 | 1,677,767,760	 | 
+| UCN	 | China	                 | 1,677,767,760	 | Hong Kong passports after July 2019
 | USE	 | Sweden	                 | 12,036,240	 |  | 
 | UFR	 | France	                 | 81,730,800	 |  | 
 | UCA	 | Canada	                 | 44,150,400	 |  | 
@@ -65,6 +65,10 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
 | ULI	 | Liechtenstein	         | 52,560	 | No registration possible yet | 
+| UIS	 | Iceland	         | 420,480	 | passports after february 2013
+| UHK	 | Hong Kong	         | 8,988,000	 | No registration possible yet
+| UES	 | Spain	         | 56,764,800	 | passports after July 2016
+
 
 # Sybil Resistance
 UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
