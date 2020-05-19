@@ -68,7 +68,19 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UIS	 | Iceland	         | 420,480	 | passports after february 2013
 | UHK	 | Hong Kong	         | 8,988,000	 | No registration possible yet
 | UES	 | Spain	         | 56,764,800	 | passports after July 2016
+| URU	 | Russia	         | 
+| UIL	 | Israel	         | 
+| UPT	 | Portugal	         | 
+| UDK	 | Denmark	         | 
+| UTR	 | Turkey	         | 
+| URO	 | Romania	         | 
+| UPL	 | Poland	         | 
 
+*The numbers displayed are maximum numbers, assuming that one block is minted every minute
+
+# Additional distribution
+In addition to the distribution above, an additional 10% of coins are minted by the validator nodes.
+The dev fund also collects an additional reward of 10% that is halving every 525600 blocks until it will reach 1.25%
 
 # Sybil Resistance
 UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
