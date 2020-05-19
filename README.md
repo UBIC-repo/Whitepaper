@@ -255,7 +255,7 @@ While it is difficult for a non-instutional participant to link an address to an
  
 # Other applications
 ### KYC
-Although there are no personal information stored on the blockchain itself, a user could decide to reveal the information contained in the Date Group 1 and/or Data Group 2 to another identity.
+Although there are no personal information stored on the blockchain itself, a user could decide to reveal the information contained in the Data Group 1 and/or Data Group 2 to another entity.
 
 ### Voting
 Two voting schemes are possible with UBIC, in the first voting is weighted by the currency holdings of the voters like it is already done with many cryptocurrencies.
