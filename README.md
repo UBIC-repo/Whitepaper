@@ -75,7 +75,7 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UTR	 | Turkey	         | 
 | URO	 | Romania	         | 
 | UPL	 | Poland	         |
-| UNL	 | Netherland	         | 
+| UNL	 | Netherlands	         | 
 
 *The numbers displayed are maximum numbers, assuming that one block is minted every minute
 
