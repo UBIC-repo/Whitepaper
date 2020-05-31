@@ -6,7 +6,7 @@
 - [Sybil Resistance](#sybil-resistance)
 - [Consensus](#consensus)
 - [The E-Passport](#the-e-passport)
-- [Non-transferable proof of Signature Knowledge](#non-transferable-proof-of-signature-knowledge)
+- [Proof of Signature Knowledge](#proof-of-signature-knowledge)
 - [Address structure](#address-structure)
 - [Transactions](#transactions)
 - [Blocks](#blocks)
@@ -14,7 +14,7 @@
 - [Other applications](#other-applications)
 
 # Universal Basic Income Currency
-In current cryptocurrency schemes rewards are distributed to entities that secure the network through proof of work or proof of stake mechanisms, there are no rewards for being part of the network.
+In current cryptocurrency schemes rewards are distributed to entities that secure the network through Proof of Work or Proof of Stake mechanisms, there are no rewards for being part of the network.
 Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
 
 # Previous work and other projects
@@ -84,7 +84,7 @@ In addition to the distribution above, an additional 10% of coins are minted by 
 The dev fund also collects an additional reward of 10% that is halving every 525600 blocks until it will reach 1.25%
 
 # Sybil Resistance
-UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Non-transferable proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
+UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
 
 UBIC is currently restricted to be used in 28 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
 
@@ -100,7 +100,7 @@ The key part of the E-Passport is a NFC chip that is embed in it. This chip cont
  - Data Group 2 contains the facial image
  - Data Group 3 contains the fingerprints, it can only be accessed using something called the Extended Access Control which is only available to governments.
 Finally the Document Security Object is a PKCS7 file that contains the hash of all the different Data Groups signed using a Document Signing Certificate issued by a government.
-In the case of UBIC only the Document Security Objects will be read out to generate a non-transferable proof of signature knowledge.
+In the case of UBIC only the Document Security Objects will be read out to generate a Proof of signature knowledge.
 
 ### Basic Access Control
 Using NFC technology it is possible to read out passive tags that are up to 10cm away. Theoretically it would be possible to read out a passport through the pocket of someone.
@@ -118,8 +118,8 @@ The Public Key Directory is a service that provides the Country Signing and Docu
 The link to download them is: https://pkddownloadsg.icao.int/
 The PKD is not the only source where it is possible to to get those certificates, some governments publish their Country Signing Certificate and the ones of other countries they trust online, DSCs can also be found on passports themselves.
  
-# Non-transferable proof of Signature Knowledge
-The Non-transferable proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
+# Proof of Signature Knowledge
+The Proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
 It consists in proving the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
