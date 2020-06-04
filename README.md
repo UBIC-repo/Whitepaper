@@ -60,7 +60,6 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UMY	 | Malaysia	                 | 38,684,160	 |  | 
 | UUA	 | Ukraine	                 | 54,767,520	 |  | 
 | USP	 | Spain 	                 | 108,000,000	 | passports after July 2016 |
-| UHK	 | Hongkong	                 | 17,100,000	 | passports after July 2019 | 
 | UIS	 | Iceland 	                 | 420,480	 | passports after February 2013 |
 | UEE	 | Estonia	                 | 1,681,920	 | No registration possible yet | 
 | UMC	 | Monaco	                 | 52,560	 | No registration possible yet | 
