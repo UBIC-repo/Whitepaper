@@ -67,14 +67,14 @@ The table bellow shows the distribution rates for each UBIC currency.
 | UIS	 | Iceland	         | 420,480	 | passports after february 2013
 | UHK	 | Hong Kong	         | 8,988,000	 | No registration possible yet
 | UES	 | Spain	         | 56,764,800	 | passports after July 2016
-| URU	 | Russia	         | 
-| UIL	 | Israel	         | 
-| UPT	 | Portugal	         | 
-| UDK	 | Denmark	         | 
-| UTR	 | Turkey	         | 
-| URO	 | Romania	         | 
-| UPL	 | Poland	         |
-| UNL	 | Netherlands	         | 
+| URU	 | Russia	         | 176,202,144
+| UIL	 | Israel	         | 10,833,078
+| UPT	 | Portugal	         | 12,535,349
+| UDK	 | Denmark	         | 7,079,789
+| UTR	 | Turkey	         | 99,990,144
+| URO	 | Romania	         | 23,668,398
+| UPL	 | Poland	         | 46,300,314
+| UNL	 | Netherlands	         | 21,071,093
 
 *The numbers displayed are maximum numbers, assuming that one block is minted every minute
 
