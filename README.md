@@ -14,26 +14,23 @@
 - [Other applications](#other-applications)
 
 # Universal Basic Income Currency
-In current cryptocurrency schemes rewards are distributed to entities that secure the network through Proof of Work or Proof of Stake mechanisms, there are no rewards for being part of the network.
-Current reward mechanisms always result in a very asymmetric value distribution between participants, therefore UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
+In current cryptocurrency schemes, rewards are distributed to entities that secure the network through Proof of Work or Proof of Stake mechanisms. There are no rewards for being part of the network. Because current reward mechanisms always result in a very asymmetric value distribution between participants, UBIC proposes a monetary system where all participants are rewarded through a universal basic income.
 
 # Previous work and other projects
-As of 2020 thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution.
-The main difference between non-UBI and UBI cryptocurrencies is for the need to solve the sybil attack. 
+As of 2020, thousands of cryptocurrencies exist and UBIC is not the first project aiming to implement a UBI distribution. The main difference between non-UBI and UBI cryptocurrencies is the need to solve the Sybil attack.
 
-Some projects like "Duniter" for example have started to create a web of trust that requires users to "verify" each others. While the idea is simple building a secure web of trust is actually rather complex requiring advanced graph theory algorithms and manual verification. Another approach is a Turing-Test for participants - for example simultanous puzzle-solving with "Idena" -, which consumes a lot of lifetime for willing participants while resistance against artificial intelligence is a continous challenge.
+Some projects like "Duniter" for example have created a Web of Trust (WOT) that requires users to "verify" each other. While the idea is simple, actually building a secure Web of Trust is complex and requires advanced graph theory algorithms and manual verification. Another approach, which can be seen through puzzle-solving with “Idena” is a Turing-Test for participants. This type of test consumes a lot of time for willing participants and resistance against artificial intelligence remains a continuous challenge.
 
-UBIC attempts to solve this issue through another approach where the innovation gap is much lower by using the already existent digital features offered by modern Passports.
+UBIC attempts to solve this issue through a new approach, where the innovation gap is much lower, by using existing digital features offered by modern passports.
 
 # Economics
-A currency with unlimited supply is likely to have little to no value. This is why the total supply should be caped to a fixed amount every year.
-There will be different currencies running on one unique blockchain each currency will be associated to one country and be identified by U + the iso2 country code.
-UCH will be the currency for Switzerland, UDE for Germany, UAT for Austria and UUK for the UK.
-A large share of this supply will be equally distributed among addresses that were successfully associated to a passport.
-This means that if the block supply for UCH the Swiss UBIC currency is 100 units per block and there are 50 registered passports each will get 2 units per block.
-Some weeks later there are 500 registered passports, the reward will still be 100 units per block or a tiny bit more, now every passport holder will get 0.2 units per block.
+A currency with unlimited supply is likely to have little to no value. This is why the total supply should be capped to a fixed amount every year. While there will be different currencies running on one unique blockchain, each currency will be associated with one country. They will be identified by U + the iso2 country code.
 
-The table bellow shows the distribution rates for each UBIC currency.
+For example, ‘UCH’ will be the currency for Switzerland, ‘UDE’ for Germany, ‘UAT’ for Austria, and ‘UUK’ for the UK. 
+
+A large share of the supply will be equally distributed among addresses that were successfully associated with a passport. What this means is that if the block supply for UCH, the Swiss UBIC currency, is 100 units per block and there are 50 registered passports, each will get 2 units per block. Some weeks later, when there are 500 registered passports and the reward is still 100 units per block, every passport holder will get 0.2 units per block.
+
+The table below shows the distribution rates for each UBIC currency.
 
 | Currency code | Country  | UBI yearly emission rate | additional information
 | :---- | :--------- | :---------------- | :------------- |
@@ -79,47 +76,41 @@ The table bellow shows the distribution rates for each UBIC currency.
 *The numbers displayed are maximum numbers, assuming that one block is minted every minute
 
 # Additional distribution
-In addition to the distribution above, an additional 10% of coins are minted by the validator nodes.
-The dev fund also collects an additional reward of 10% that is halving every 525600 blocks until it will reach 1.25%
+In addition to the distribution above, 10% of coins are minted by the validator nodes. The dev fund also collects an additional reward of 10%, which halves every 525,600 blocks, until it reaches 1.25%
 
 # Sybil Resistance
-UBICs ability to resist sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your Identity is NOT revealed that way thanks to a Proof of Signature Knowledge, there is only a unique hash of your passport stored on the blockchain, explained in more detail further down.
+UBICs ability to resist Sybil attacks is based on the security features of modern E-Passports. You can join by scanning your E-Passport via NFC. Your identity will NOT be revealed, thanks to a Proof of Signature Knowledge. Instead, there is only a unique hash of your passport stored on the blockchain. More detail on this will be explained later.
 
-UBIC is currently restricted to be used in 28 countrys that fullfill all security requirements for UBIC to work sybil-proof at the moment. More participants may be able to join as soon as their Country follows more secure technical procedures regarding their E-Passports.
+UBIC is currently restricted for use in 28 countries which fulfill all security requirements for UBIC to work Sybil-proof. More participants may be able to join when their country follows more secure technical procedures regarding their E-Passports.
 
 # The E-Passport
-Electronic passports also sometimes known as biometric passports have already been introduced in many countries over the last decade.
-These passports provide additional security through NFC and Cryptographic technologies making its forgery virtually impossible.
-The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features.
-There is a little bit of freedom regarding the cryptographic algorithms used, some are not save enough for UBIC yet (for example Hong Kong used 3 as RSA exponent for until June 2019, while UBIC requires a big enough RSA exponent, 65537 or more), this is why not all passports can be used with UBIC.
+Electronic passports, sometimes known as biometric passports, have already been introduced in many countries through the last decade. These passports provide additional security through NFC and Cryptographic technologies, making forgery virtually impossible. The E-Passport is standardized by the DOC9303 paper from the ICAO, therefore all E-passports have to implement a set of required features.
+There is a bit of freedom regarding the cryptographic algorithms used, and some are not safe enough for UBIC yet. For example, Hong Kong used a 3 as their RSA exponent until June 2019, while UBIC requires a much bigger RSA exponent of 65537 or more.  This is why all passports cannot be used with UBIC.
 
 ### The NFC chip
-The key part of the E-Passport is a NFC chip that is embed in it. This chip contains usually 32kb to 64kb of information distributed in several Data Groups.
- - Data Group 1 contains the Machine Readable Zone also known as MRZ, it includes information such as the first name, last name, date of birth and the date of expiration.
- - Data Group 2 contains the facial image
- - Data Group 3 contains the fingerprints, it can only be accessed using something called the Extended Access Control which is only available to governments.
-Finally the Document Security Object is a PKCS7 file that contains the hash of all the different Data Groups signed using a Document Signing Certificate issued by a government.
-In the case of UBIC only the Document Security Objects will be read out to generate a Proof of signature knowledge.
+The key part of the E-Passport is the NFC chip that is embedded in it. This chip contains 32kb to 64kb of information distributed in several Data Groups:
+ - **Data Group 1** contains the Machine Readable Zone also known as MRZ, it includes information such as the first name, last name, date of birth, and the date of expiration.
+ - **Data Group 2** contains the facial image.
+ - **Data Group 3** contains the fingerprints. This group can only be accessed using the Extended Access Control, which is only available to governments.
+
+Finally, the Document Security Object is a PKCS7 file that contains the hash of all the different Data Groups. This file is signed using a Document Signing Certificate issued by a government. In the case of UBIC, only the Document Security Objects will be read out to generate a Proof of Signature Knowledge.
 
 ### Basic Access Control
-Using NFC technology it is possible to read out passive tags that are up to 10cm away. Theoretically it would be possible to read out a passport through the pocket of someone.
-However this isn't that easy because of a security feature called Basic Access Control. If it is enabled the passport number, date of birth and date of expiry act like a password and have to be provided to NFC chip to read out the content.
+Using NFC technology, it is possible to read out passive tags that are up to 10cm away. Theoretically, it would be possible to read out a passport through someone’s pocket, however, this isn't easy because of a security feature known as the Basic Access Control. If enabled, the passport number, date of birth, and date of expiry act as a password, and must be provided for the chip to read out the content.
 
 ### Document Signing Certificates
-As described by DOC9303, Document Signing Certificate are issued at least once every three months and have a limited signing period after which the private key should be destroyed.
-This ensures that if one DSC is misused only a limited set of passports needs to be reissued. All DSCs have to be signed by a Country Signing Certificate Authority also known as CSCA.
+As described by DOC9303, the Document Signing Certificates are issued at least once every three months and have a limited signing period, after which the private key should be destroyed. This ensures that if one DSC is misused, only a limited set of passports must be reissued. All DSCs have to be signed by a Country Signing Certificate Authority (CSCA).
  
 ### Country Signing Certificates
-The Country Signing Certificates are issued by the CSCA, this entity has the highest level of privilege within the governmental Public Key Infrastructure. 
+The Country Signing Certificates are issued by the CSCA. This entity has the highest level of privilege within the governmental Public Key Infrastructure.
  
 ### PKD
-The Public Key Directory is a service that provides the Country Signing and Document Signing Certificates.
-The link to download them is: https://pkddownloadsg.icao.int/
-The PKD is not the only source where it is possible to to get those certificates, some governments publish their Country Signing Certificate and the ones of other countries they trust online, DSCs can also be found on passports themselves.
+The Public Key Directory is a service that provides the Country Signing and Document Signing Certificates. 
+The link to download them is: https://pkddownloadsg.icao.int/ 
+The PKD is not the only source to get those certificates, as some governments publish their Country Signing Certificate, and the ones of other countries they trust, online. DSCs can also be found on passports themselves.
  
 # Proof of Signature Knowledge
-The Proof of Signature Knowledge is the key element that allows UBIC to operate by providing a way to decently and securely verify there is a link between an UBIC address and an unknown but genuine passport.
-It consists in proving the knowledge of a digital signature without revealing it.
+The Proof of Signature Knowledge is the key element that allows UBIC to operate. It does so by providing a way to decently and securely verify that there is a link between a UBIC address and an unknown but genuine passport. The Proof of Signature Knowledge proves the knowledge of a digital signature without revealing it.
  
 ### Algorithm for ECDSA
 #### generating the proof
@@ -181,14 +172,12 @@ Example:
 
 ```0x23f234``` is the checksum that is obtained by taking the leading 3 bytes from the result of ```sha256(<program identifier> <payload length> <payload>)```
 
-There is no need to have one address for every currency, one single address can receive, hold and send all UBIC currencies.
+There is no need to have one address for every currency. One single address can receive, hold, and send all UBIC currencies.
 
 # Transactions
 
 ### Structure
-Transactions can have one or more inputs and zero, one or more outputs. The input values have always to be greater or equal to the output values.
-The difference between sum(inputs) - sum(outputs) are the transactions fees that are burned which is meant to reduce inflation.
-A transaction can transfer several currencies at the time. However it is not possible to transform one currency in another.
+Transactions can have one or more inputs and zero, one, or more outputs. The input values always have to be greater than or equal to the output values. The difference between sum(inputs) - sum(outputs) are the transaction fees that are burned, which is meant to reduce inflation. A transaction can transfer several currencies at one time, however, it is not possible to transform one currency to another.
 
 ### Standard transaction
 The standard transaction's structure is as follows:
@@ -208,8 +197,7 @@ The amount field is a map that maps a currency id (```uint8_t```) to a currency 
 The script field is a ```std::vector<unsigned char>``` field that is intended to contain a serialized object.
 
 ### Onchain currency exchange
-In a scenario where Alice holds 10 UCH and wants to exchange them for 10 UDE from Bob they could build a transaction together for this purpose.
-Lets 0x17a6 be Alice's address and 0x98b1 Bob's address. Then the transaction having as inputs 0x17a6(10 UCH), 0x98b1(10 UDE) and as outputs 0x17a6(10 UDE), 0x98b1(10 UCH) would serve this purpose.
+In a scenario where Alice holds 10 UCH and wants to exchange them for 10 UDE from Bob, a transaction could be built for this purpose. Let’s 0x17a6 be Alice's address and 0x98b1 Bob's address. Then the transaction having as inputs 0x17a6(10 UCH), 0x98b1(10 UDE) and as outputs 0x17a6(10 UDE), 0x98b1(10 UCH) would serve this purpose.
  
 # Blocks
 Blocks are structured the as follows:
@@ -230,33 +218,26 @@ Blocks are structured the as follows:
 
 
 # Consensus
-With UBIC there are no miners, instead blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in it's early stage. As time goes by new delegates will be added and the genesis delegates will be removed making UBIC truely decentralized.
-The addition and removal of delegate is regulated through a voting mechanism in which only delegates are allowed to vote.
-Delegates will be people, companies, nonprofit organizations or any entity capable of running a node and willing to support this project. They will be designated by the community and later be voted by the other delegates.
-Should a delegate misbehave other delegates are encouraged to revoke it's priviledge by doing an unvote.
-
+With UBIC there are no miners. Instead, blocks are validated by delegates. The genesis contains 8 centrally controlled delegates that will support the network in its early stage. As time goes by, new delegates will be added and the genesis delegates will be removed, making UBIC truly decentralized. The addition and removal of delegates is regulated by a voting mechanism in which only delegates are allowed to vote. Delegates can be people, companies, nonprofit organizations, or any entity capable of running a node and willing to support this project. Delegates will be designated by the community and later be voted by the other delegates. Should a delegate misbehave other delegates are encouraged to revoke their privilege by doing an unvote.
 
 # Possible issues
 ### Individuals with multiple passports
-For privacy reasons no personal information are transmitted to the blockchain. UBIC assumes that every individual has only one valid passport but this might not be true.
-Peoples can get a new passport before the old one is expired or claim that it has been stolen.
-Because Passport revocation lists are not public UBIC assumes that every passport that hasn't reached it's date of expiry is valid.
-It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more.
-There are some factors that mitigate this risk:
- - Genuine passports are worth several thousand dollars on the black market this is why if someone who "loses" his passport too often he or her won't get a new one and will draw attention from law enforcement.
+For privacy reasons, no personal information is transmitted to the blockchain. UBIC assumes that every individual has only one valid passport but this might not be true. People can get a new passport before the old one is expired or claim that it has been stolen. Because passport revocation lists are not public, UBIC assumes that every passport that hasn't reached the date of expiry is valid. It could be that some individuals end up with 2 or 3 verified addresses but it is unlikely they'll get more because some factors mitigate this risk:
+
+ - Genuine passports are worth several thousand dollars on the black market. This is why people who "lose" their passport too often are barred from getting a new one, and draw attention from law enforcement.
  - The fees and the time that is required to get a new passport might outweigh the benefit of receiving additional UBI.
- - Governments could issue passport revocation lists. A stolen or lost passport will then immediately stop to receive any additional coins.
+ - Governments could issue passport revocation lists. A stolen or lost passport will immediately stop receiving additional coins.
  
 ### Hostile governments
-Governments might be hostile to the idea of this kind of cryptocurrencies. They could then try to harm it through legislation or hacking. Because they are emitting the Document Signing Certificates they could spam the network with passport registration transaction, this however appears to be unlikely as it will certainly lower their credibility and damage them.
+Some governments might be hostile to the idea of cryptocurrency. They could then try to harm its growth through legislation or hacking. Because governments are responsible for emitting the Document Signing Certificates, they could spam the network with passport registration transactions. This appears to be unlikely, however, as it will certainly lower their credibility and damage them.
  
 ### Privacy concerns
-While it is difficult for a non-instutional participant to link an address to an identity, governments that emitted the passport certainly will be able to do so.
+While it is difficult for a non-institutional participant to link an address to an identity, governments that emitted the passport certainly will be able to do so.
  
 # Other applications
 ### KYC
-Although there are no personal information stored on the blockchain itself, a user could decide to reveal the information contained in the Data Group 1 and/or Data Group 2 to another entity.
+Although there is no personal information stored on the blockchain itself, a user could decide to reveal the information contained in the Data Group 1 and/or Data Group 2 to another entity.
 
 ### Voting
-Two voting schemes are possible with UBIC, in the first voting is weighted by the currency holdings of the voters like it is already done with many cryptocurrencies.
-In the second scheme only UBI receiver can vote with each a voting weight of 1, because the country of origin from the voter is known votes can also be country specific.
+Two voting schemes are possible with UBIC. 
+In the first, voting is weighted by the currency holdings of the voters, as it is already done with many cryptocurrencies. In the second scheme, only the UBI receiver can vote, with each carrying a voting weight of 1. This is possible because the country of origin from the voter is known, so votes can also be country-specific.
